@@ -1,0 +1,432 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.container-yellow{
+  background-color: #FFFDF0;
+}
+
+h1, h2, h3, h4{
+  font-family: "Mochiy Pop One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p{
+  font-size: 1.5rem;
+}
+
+h1{
+  font-size: 3.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Offset for anchor targets so sticky navbar doesn't cover them */
+:root {
+  --nav-offset: 100px; /* adjust if your navbar height changes */
+}
+
+section {
+  scroll-margin-top: var(--nav-offset);
+}
+
+/* Nav */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  z-index: 1000;
+  font-size: 1.2rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  font-family: "Itim";
+}
+
+.contact-button{
+  background-color: #FBE173;
+  padding: 10px 20px 10px 20px;
+  border-radius: 100px;
+  font-family: "Itim";
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.contact-button:hover{
+  background-color: #FFF1B5;
+}
+
+.logo img {
+  max-width: 80px;
+  height: auto;
+  display: block;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.link-nav:hover{
+   color: #a39140;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  background: #fff;
+  padding-top: 100px; /* space for navbar (adjust if nav is taller) */
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.hero-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: start;
+  text-align: left;
+}
+
+.hero-right {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.circle-dog {
+  position: absolute;
+  top: 0;
+  left: 20%;
+  z-index: 2;
+}
+
+.circle-cat {
+  position: absolute;
+  top: 45%;
+  right: -10%;
+  z-index: 3;
+}
+
+.circle-bird {
+  position: absolute;
+  bottom: 2%;
+  left: 20%;
+  z-index: 1;
+}
+
+.circle-dog img {
+  max-width: 350px;
+  height: auto;
+}
+.circle-cat img {
+  max-width: 300px;
+  height: auto;
+}
+.circle-bird img {
+  max-width: 200px;
+  height: auto;
+}
+
+.parallax {
+  position: absolute;
+  will-change: transform;
+  transition: transform 0.05s linear;
+}
+
+/* Brands */
+.brands{
+  width: 90%;
+  max-width: 1100px;
+  margin: 5rem auto;
+  padding: 0.5rem 0;
+}
+
+.brand-carousel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.brand-track {
+  display: flex;
+  width: max-content;   /* let it size naturally */
+  animation: scroll 20s linear infinite;
+}
+
+.brand-track img {
+  max-height: 60px;
+  margin: 0 1rem; /* keep consistent spacing */
+  object-fit: contain;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.brands .brand-logos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.brands img {
+  max-width: 120px;
+  height: auto;
+}
+
+/* Contact */
+.contact-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-colum{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+
+.contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.contact-list{
+  margin-top: 1rem;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.contact-text{
+  text-decoration: none;
+  color: #333;
+}
+
+.contact-text:hover{
+  text-decoration: none;
+  color: #a39140;
+}
+
+.map{
+  width: 60%;
+  height: 20rem;
+  border-radius: 20px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #eee;
+  margin-top: 2rem;
+}
+
+.footer p{
+  font-size: 1rem;
+}
+
+/* Hamburger default hidden on desktop */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Mobile menu styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1rem 2rem;
+    align-items: center;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hero {
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-left {
+    position: relative;
+    z-index: 10;
+    max-width: 90%;
+    text-align: left;
+  }
+
+  .hero-left h1{
+    font-size: 2rem;
+  }
+
+  .hero-left p{
+    font-size: 1rem;
+  }
+
+  .hero-right {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .hero-right .parallax {
+    transform: none !important; /* stop parallax on mobile */
+  }
+
+  .circle-dog img{
+    max-width: 175px;
+    opacity: 0.5;
+  }
+
+  .circle-cat img{
+    max-width: 150px;
+    opacity: 0.5;
+  }
+
+  .circle-bird img {
+    max-width: 100px;
+    opacity: 0.5;
+  }
+
+  .circle-dog {
+    top: 5%;
+    left: 10%;
+  }
+
+  .circle-cat {
+    top: 45%;
+    right: -5%;
+  }
+
+  .circle-bird {
+    bottom: 30%;
+    left: 15%;
+  }
+
+  .brands{
+    margin: 0;
+    width: 100%;
+  }
+
+  .brand-track {
+    animation: scroll 20s linear infinite;
+  }
+
+  @keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+  .contact{
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .map{
+    width: 100%;
+    height: 15rem;
+  }
+
+  .contact-colum{
+    width: 100%;
+  }
+}
+
+/* Animate hamburger into X */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+

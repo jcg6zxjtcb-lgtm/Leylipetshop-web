@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leyli Petshop</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <nav class="container nav">
+      <div class="logo"><img src="./images/Logo-Example.png" alt=""></div>
+      
+      <!-- Hamburger button -->
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a class="link-nav" href="#hero">Ana Sayfa</a></li>
+        <li><a class="link-nav" href="#brands">Markalar</a></li>
+        <li><a class="contact-button" href="#contact">Bize Ulaşın</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero container">
+    <div class="hero-left">
+      <h1>Leyli Petshop</h1>
+      <div>
+          <p>Kaliteli Mama, Aksesuar, kıyafetler.</p>
+          <p>Küçük dostunuz için en uygun ürünler.</p>
+      </div>
+      <a class="contact-button" href="#contact">Bize Ulaşın</a>
+    </div>
+
+    <div class="hero-right">
+      <div class="circle-dog parallax" data-speed="3">
+        <img src="./images/circle-dog.png" alt="Photo dog">
+      </div>
+      <div class="circle-cat parallax" data-speed="7">
+        <img src="./images/circle-cat.png" alt="Photo Cat">
+      </div>
+      <div class="circle-bird parallax" data-speed="12">
+        <img src="./images/circle-bird.png" alt="Photo Bird">
+      </div>
+    </div>
+  </section>
+
+  <!-- Brands Section -->
+   <div class="container-yellow">
+    <section id="brands" class="brands container">
+      <div class="brand-carousel">
+        <div class="brand-track">
+          <img src="./images/logos-food/brand-1.png" alt="Brand 1">
+          <img src="./images/logos-food/brand-2.png" alt="Brand 2">
+          <img src="./images/logos-food/brand-3.png" alt="Brand 3">
+          <img src="./images/logos-food/brand-4.png" alt="Brand 4">
+          <img src="./images/logos-food/brand-5.png" alt="Brand 5">
+          <img src="./images/logos-food/brand-6.png" alt="Brand 6">
+          <img src="./images/logos-food/brand-7.png" alt="Brand 7">
+          <img src="./images/logos-food/brand-8.png" alt="Brand 8">
+          <img src="./images/logos-food/brand-9.png" alt="Brand 9">
+
+          <!-- duplicated logos for infinite loop -->
+          <img src="./images/logos-food/brand-1.png" alt="Brand 1">
+          <img src="./images/logos-food/brand-2.png" alt="Brand 2">
+          <img src="./images/logos-food/brand-3.png" alt="Brand 3">
+          <img src="./images/logos-food/brand-4.png" alt="Brand 4">
+          <img src="./images/logos-food/brand-5.png" alt="Brand 5">
+          <img src="./images/logos-food/brand-6.png" alt="Brand 6">
+          <img src="./images/logos-food/brand-7.png" alt="Brand 7">
+          <img src="./images/logos-food/brand-8.png" alt="Brand 8">
+          <img src="./images/logos-food/brand-9.png" alt="Brand 9">
+        </div>
+      </div>
+    </section>
+
+   </div>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact container">
+    <div class="contact-colum">
+      <h2>Bize Ulasın</h2>
+      <ul class="contact-list">
+        <li>
+          <!-- Phone SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.88 19.88 0 0 1 3.1 5.18 2 2 0 0 1 5 3h3a2 2 0 0 1 2 1.72c.12.81.37 1.61.72 2.34a2 2 0 0 1-.45 2.11L9.1 10.9a16 16 0 0 0 6 6l1.73-1.18a2 2 0 0 1 2.11-.45c.73.35 1.53.6 2.34.72A2 2 0 0 1 22 16.92z"/></svg>
+          <a class="contact-text" href="tel:+905436542404">+90 543 654 24 04</a>
+        </li>
+        <li>
+          <!-- Email SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm0 2v.01L12 13 20 6.01V6H4zm0 12h16V8l-8 7-8-7v10z"/></svg>
+          <a class="contact-text" href="mailto:Leyli.petshop@gmail.com?subject=Contact Inquiry&body=Hello">Leyli.petshop@gmail.com</a>
+        </li>
+        <li>
+          <!-- Location SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
+          <a class="contact-text" target="_blank" href="https://maps.app.goo.gl/NsgFCMtzJyaFWR2W9">Akın Simav, Mithatpaşa Cd. No: 474/A Konak/İzmir</a>
+        </li>
+      </ul>
+    </div>
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1049.9862011295597!2d27.113339218927045!3d38.40876212110979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd932715dd709%3A0x6a76851e02b45fe2!2sLeyli%20Pet%20Shop!5e0!3m2!1sen!2sbe!4v1768558997788!5m2!1sen!2sbe" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; Leyli Petshop. All rights reserved.</p>
+  </footer>
+
+  <script src="./JS/main.js"></script>
+</body>
+</html>
